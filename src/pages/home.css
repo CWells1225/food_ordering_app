@@ -1,0 +1,44 @@
+.home_page {
+    padding: 30px 16px;
+}
+
+.home_page h1 {
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.hmpg_img {
+    padding-bottom: 30px;
+   
+}
+
+.hmpg_buttons{
+    padding-top: 30px;
+}
+
+.hmpg_menu_link,.hmpg_order_online {
+    display: inline-block;
+}
+
+.hmpg_menu_link button {
+    margin-left: 300px;
+    border-radius: 5px; 
+    border: 1px solid 6D6969;
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    font-color: 6D6969;
+    background-color: FFFDFD;
+
+}
+
+.hmpg_order_online button {
+    margin-left: 450px;
+    border-radius: 5px; 
+	border: 1px solid 6D6969;
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    font-color: 6D6969;
+    background-color: FFFDFD;
+}
