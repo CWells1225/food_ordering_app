@@ -6,10 +6,20 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    transition: background-color 1s;
+}
+
+.darken {
+    background-color: black;
 }
 
 .nav {
-    color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -28,7 +38,7 @@ header {
 }
 
 .nav li a {
-    color: black;
+    color: white;
     font-weight: 700;
     text-decoration: none;
     height: 100%;
