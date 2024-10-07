@@ -2,10 +2,10 @@ import {React, useState} from 'react';
 import { Box } from '@chakra-ui/react'; 
 
 
-export default function Checkout() {
+export default function Cart() {
     return (
         <Box>
-            <p> Checkout Page</p>    
+            <p> Cart Page</p>    
         </Box>
     )
 

@@ -1,4 +1,6 @@
 import React,{useState,useEffect} from 'react';
+import { IconButton } from '@chakra-ui/react';
+import { IoCartOutline } from "react-icons/io5"
 import './navbar.css';
 
 export default function Navbar() {
@@ -32,10 +34,10 @@ export default function Navbar() {
                     <a href='/'> Home</a>
                 </li>
                 <li>
-                    <a href='/menu-page' className='menu-btn'> ORDER ONLINE </a>
+                    <a href='/menu' className='menu-btn'> ORDER ONLINE </a>
                 </li>
                 <li>
-                    <a href='/checkout'> Cart</a>
+                    <a href='/checkout'> <IconButton aria-label='cart' icon={ <IoCartOutline /> } /></a>
                 </li>
             </ul>
         </div>    
