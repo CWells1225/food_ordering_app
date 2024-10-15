@@ -1,12 +1,11 @@
-import { Admin as RAdmin} from 'react-admin';
-import { Box } from '@chakra-ui/react'; 
-
+import { Admin as RAdmin } from 'react-admin';
 
 export default function Admin() {
     return (
         <RAdmin>
-             
+         abc
         </RAdmin>
     )
 
 };
+
