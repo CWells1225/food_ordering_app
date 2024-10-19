@@ -2,6 +2,7 @@ import { List,
         Datagrid, 
         TextField, 
         Create, 
+        Edit,
         SimpleForm, 
         TextInput, 
         required,
@@ -10,22 +11,32 @@ import { List,
         ImageField  
     } from 'react-admin';
 
-export const CategoryCreate = () => (
-    <Create>
+const CategoryForm = () => {
+    return (
         <SimpleForm sanitizeEmptyValues>
-        <ImageInput source='image' label='Image'>
-        <ImageField source='src' title='title' />
-        </ImageInput>
-
+            <ImageInput source='image' label='Image'>
+            <ImageField source='src' title='title' />
+            </ImageInput>
             <TextInput source='title' validate={[required()]} fullWidth />
             <TextInput source='description' fullWidth />
         </SimpleForm>
+    );
+}    
+const CategoryCreate = () => (
+    <Create>
+        <CategoryForm />
     </Create>
+);
+
+const CategoryEdit = () => (
+    <Edit>
+        <CategoryForm />
+    </Edit>
 );
 
 const CategoryList = () => (
     <List>
-        <Datagrid>
+        <Datagrid rowClick='edit'>
             <ImageField source='image.src' label='Image'/>
             <TextField source='title' />
             <TextField source='description' />
@@ -39,4 +50,5 @@ export const CategoryProps = {
     name:'category', 
     list: CategoryList,
     create: CategoryCreate,
+    edit: CategoryEdit,
 }
