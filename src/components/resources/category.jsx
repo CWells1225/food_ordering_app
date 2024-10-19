@@ -11,6 +11,8 @@ import { List,
         ImageField  
     } from 'react-admin';
 
+    import { BiSolidCategory } from "react-icons/bi";
+
 const CategoryForm = () => {
     return (
         <SimpleForm sanitizeEmptyValues>
@@ -47,6 +49,7 @@ const CategoryList = () => (
 );
 
 export const CategoryProps = {
+    icon: BiSolidCategory,
     name:'category', 
     list: CategoryList,
     create: CategoryCreate,

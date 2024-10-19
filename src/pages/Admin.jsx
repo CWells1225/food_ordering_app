@@ -2,6 +2,7 @@ import { Admin as RA, Resource } from 'react-admin';
 import { FirebaseDataProvider, FirebaseAuthProvider } from 'react-admin-firebase';
 
 import { CategoryProps } from '../components/resources/category';
+import { ItemProps } from '../components/resources/item';
 import { firebaseConfig } from '../Utilities/firebase';
 
 const options = {
@@ -24,6 +25,7 @@ export default function Admin() {
         >
 
             <Resource {...CategoryProps} />
+            <Resource {...ItemProps} />
         </RA>
     );
 };
