@@ -1,5 +1,5 @@
 import { ListGuesser, Admin as RA, Resource } from 'react-admin';
-import { FirebaseDataProvider } from 'react-admin-firebase';
+import { FirebaseDataProvider, FirebaseAuthProvider } from 'react-admin-firebase';
 
 import { firebaseConfig } from '../Utilities/firebase';
 
@@ -13,10 +13,11 @@ const options = {
 }; 
 
 const dataProvider = FirebaseDataProvider(firebaseConfig, options); 
+const authProvider = FirebaseAuthProvider(firebaseConfig);
 
 export default function Admin() {
     return (
-        <RA basename='/admin' dataProvider={dataProvider} >
+        <RA authProvider={authProvider} basename='/admin' dataProvider={dataProvider} >
             <Resource name="items" list={ListGuesser} />
         </RA>
     )
