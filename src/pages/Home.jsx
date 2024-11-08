@@ -11,7 +11,7 @@ export default function Home() {
         
         <div className='home_btn'> 
         <div className='home_order_online'>
-            <a href='/menu-page' className='btn'> Order Now </a>
+            <a href='/menu' className='btn'> Order Now </a>
         </div>
         </div>
         </div>

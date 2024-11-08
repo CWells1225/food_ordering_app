@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import { Home, Checkout, Menu, Item, Cart } from './pages';
 import Profile from './pages/Profile';
 import Admin from './pages/Admin';
+import Info from './pages/Info';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/admin/*' element={<Admin />} />
+          <Route path='/info' element={<Info />} />
         </Routes>
       </div>
     </div>
